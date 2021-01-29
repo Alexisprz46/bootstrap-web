@@ -2,13 +2,17 @@
 	margin:0;
 	box-sizing: border-box;
 }
-.logo{
-	width:185px;
-	height:50px;
+.img-logo{
+	width:125px;
+	height:46px;
+  object-fit: cover;
 }
 .contenedor3{
 	width:100%;
 	margin:auto;
+}
+.menunosotros{
+  padding-top: 100px;
 }
 .header2 {
   height: 30px;
@@ -53,6 +57,9 @@
   margin: 0;
     height: 60px; 
 }
+.nosotrostext{
+   font-size:20px;
+}
 .menu__link {
   display: block;
   padding: 15px;
@@ -71,7 +78,7 @@
  left: 0;
 }
 .carousel-item img{
-  height:580px;
+  height:540px;
   object-fit: cover;
 }
 .container-all{
@@ -182,6 +189,9 @@
 .servicios{
   margin-bottom: 65px;
 }
+.imgentrada{
+  object-fit: cover;
+}
 .equipos{
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/fondo1.jpg);
   background-size: cover;
@@ -286,6 +296,12 @@
         width:1000px;
     }
    
+}
+.rent{
+  width:70%;
+}
+.contactenossection{
+  margin-top: 85px;
 }
 @media screen and (max-width: 768px){
 	 .imgloco2{
