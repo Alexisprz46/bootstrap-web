@@ -36,35 +36,29 @@
 	<div class="row">
         <div class="col-7">
           <h1 class="text-uppercase">Contáctenos</h1>
-          <div class="form">
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-              	<label>Nombres y Apellidos:</label>
-                <input type="text" name="name" class="form-control" id="name" placeholder="Escriba aquí sus nombres y apellidos" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-              	<label>Correo:</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="Escriba aquí su correo" data-rule="email" data-msg="Ingresa un Correo Valido" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-              	<label>Teléfono:</label>
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Escriba aquí su teléfono" data-rule="minlen:4" data-msg="Por favor ingrese al menos 8 caracteres del tema" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-              	<label>Mensaje:</label>
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escribe algo para nosotros" placeholder="Escriba aquí su mensaje"></textarea>
-                <div class="validation"></div>
-              </div>
-              <div class="text-center"><button type="submit" class="btn btn-danger">Enviar mensaje</button></div>
-            </form>
-          </div>
-        </div>
-      </div>
+         </div>
+     </div>
+    <div class="col-sm-6">
+    	<div id="cnt_form">
+    		<form id="contact-form" class="contact" name="contact-form" method="post" action="contactform.php">
+    			<div class="form-group">
+    			<input type="text" name="nombre" class="form-control name-field" required="required" placeholder="Tu nombre">
+    		    </div>
+    		    <div class="form-group">
+    			<input type="email" name="email" class="form-control mail-field" required="required" placeholder="Tu email">
+    		    </div>
+    		    <div class="form-group">
+    			<textarea name="mensaje" id="message" required="required" class="form-control" rows="8" placeholder="Escribenos"></textarea>
+    		    </div>
+    		    <div class="form-group">
+    		    	<button type="submit" class="btn btn-primary">Enviar</button>
+    		    </div>
+    		</form>
+    	</div>
     </div>
 </section>
+
+
  <section class="container-fluid">
     	<div class="row datos">
     		<div class="col-xl-5 col-12 bg-dark pt-5 pb-2">
@@ -130,6 +124,5 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
     <script src="js/carrusel.js"></script>
-    <script src="contactform/contactform.js"></script>
 </body>
 </html>
